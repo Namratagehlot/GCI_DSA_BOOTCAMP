@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
-class Level2Q1{
+public class Level2Q1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Please enter the natural number: ");
-        int n = s.nextInt();
-        int i = 1;
-        while(i<=n){
-            System.out.println(i);
-            i++;
+        System.out.print("Please enter the year: ");
+        int year = s.nextInt();
+
+        if( year % 4 == 0 || year % 400 == 0){
+            System.out.println("It is a leap year!");
+        }else{
+            System.out.println("It is not a leap year!");
         }
     }
 }
